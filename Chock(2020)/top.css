@@ -1,0 +1,48 @@
+.container_top {
+  display: grid;
+  grid-template-areas:
+    "a a b b b b c c"
+    "d d f g g g c c"
+    "d d j j j j i i"
+    "e e k k k k h h";
+  grid-row: auto;
+}
+
+.container_top > div {
+  padding: 4px;
+  /* border:1px solid black; */
+}
+
+.drivkraft {
+  grid-area: a;
+}
+.namn {
+  grid-area: b;
+}
+.fordel {
+  grid-area: c;
+}
+.personlighetsdrag {
+  grid-area: d;
+}
+.alder {
+  grid-area: f;
+}
+.hemort {
+  grid-area: g;
+}
+.livsstil {
+  grid-area: j;
+}
+.egenhet {
+  grid-area: e;
+}
+.sysselsattning {
+  grid-area: k;
+}
+.instinkt {
+  grid-area: i;
+}
+.tur {
+  grid-area: h;
+}
