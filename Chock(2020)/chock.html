@@ -1,77 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="top.css">
-    <style>
-      
 
-      
-      /* Standard textfält */
-      .standardTextContainer{
-        display: grid;
-        grid-row: 30px 30px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="top.css">
+  <style>
+    .rowContainer {
+      display: grid;
+      grid-template-rows: repeat(1, 30px);
+    }
+
+    .colContainer {
+      display: grid;
+      width: 100%;
+      grid-auto-flow: column;
+
+    }
+
+    .floatRight{
+        display: block;
+        float: right;
       }
 
-      .standardTextRubrik{
-        grid-row: 1;
-      }
+    /* .colContainer>div>input[type='checkbox']{
+        
+       } */
 
-      .standardTextInput{
-        grid-row: 2;
-      }
+    .rowContainer>div>input {
+      width: 75%;
+      background-color: transparent;
+      border-left: 0px none transparent;
+      border-top: 0px none transparent;
+      border-right: 0px none transparent;
+      border-bottom: 1px solid rgba(DD, DD, DD, 0.16);
+    }
+  </style>
+</head>
 
-      .standardTextInput>input{
-        width: 100%;
-        background-color: ;
-        border-left: 0px none transparent;
-        border-top: 0px none transparent;
-        border-right: 0px none transparent;
-        border-bottom: 1px solid gray;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container_top">
-      <div class="drivkraft"><div class="standardTextContainer">
-        <div class="standardTextRubrik">Drivkraft</div>
-        <div class="standardTextInput"><input type="text" /></div>
+<body>
+  <div class="container_top">
+    <div class="drivkraft">
+      <div class="rowContainer">
+        <div>Drivkraft</div>
+        <div><input type="text" /></div>
       </div>
-      </div>
-      <div class="namn">
-        <div class="standardTextContainer">
-          <div class="standardTextRubrik">Namn</div>
-          <div class="standardTextInput"><input type="text" /></div>
-        </div>
-     </div>
-      <div class="fordel">Fördel/Nackdel</div>
-      <div class="personlighetsdrag">Personlighetsdrag</div>
-      <div class="alder"><div class="standardTextContainer">
-        <div class="standardTextRubrik">Ålder</div>
-        <div class="standardTextInput"><input type="text" /></div>
-      </div></div>
-      <div class="hemort"><div class="standardTextContainer">
-        <div class="standardTextRubrik">Hemort</div>
-        <div class="standardTextInput"><input type="text" /></div>
-      </div></div>
-      <div class="livsstil"><div class="standardTextContainer">
-        <div class="standardTextRubrik">Livsstil</div>
-        <div class="standardTextInput"><input type="text" /></div>
-      </div></div>
-      <div class="tur">Tur</div>
-      <div class="instinkt">Instinkt</div>
-      <div class="sysselsattning"><div class="standardTextContainer">
-        <div class="standardTextRubrik">Sysslelsättning</div>
-        <div class="standardTextInput"><input type="text" /></div>
-      </div></div>
-      <div class="egenhet"><div class="standardTextContainer">
-        <div class="standardTextRubrik">Egenhet</div>
-        <div class="standardTextInput"><input type="text" /></div>
-      </div></div>
-     </div>
     </div>
-  </body>
-</html>
+    <div class="namn">
+      <div class="rowContainer">
+        <div>Namn</div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+    <div class="fordel">Fördel/Nackdel</div>
+    <div class="personlighetsdrag">
+      <div class="rowContainer">
+        <div>Personlighetsdrag</div>
+        <div><input type="text" /></div>
+        <div><input type="text" /></div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+    <div class="alder">
+      <div class="rowContainer">
+        <div>Ålder</div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+    <div class="hemort">
+      <div class="rowContainer">
+        <div>Hemort</div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+    <div class="livsstil">
+      <div class="rowContainer">
+        <div>Livsstil</div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+    <div class="tur">
+      <div class="rowContainer">
+        <div>Tur</div>
+        <div><div class="floatRight"><input type="checkbox" /><input type="checkbox" /><input type="checkbox" /></div></div>
+        
+      </div>
+    </div>
+    <div class="instinkt">
+      <div class="rowContainer">
+        <div>Instinkt</div>
+        <div>
+          <div class="floatRight"><input type="checkbox" /><input type="checkbox" /><input type="checkbox" /><input
+              type="checkbox" /><input type="checkbox" /><input type="checkbox" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="sysselsattning">
+      <div class="rowContainer">
+        <div>Sysslelsättning</div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+    <div class="egenhet">
+      <div class="rowContainer">
+        <div>Egenhet</div>
+        <div><input type="text" /></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
 
+</html>
