@@ -1,11 +1,12 @@
 .container_top {
   display: grid;
   grid-template-areas:
-    "a a b b b b c c"
-    "d d f g g g c c"
-    "d d j j j j i i"
-    "e e k k k k h h";
+    "a a b b b b b b c c"
+    "d d f g g g g g c c"
+    "d d j j j j j j i i"
+    "e e k k k k k k h h";
   grid-row: auto;
+  grid-column-gap: 20px;
 }
 
 .container_top > div {
